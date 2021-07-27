@@ -1,10 +1,6 @@
 import {
-  Link as ChakraLink,
   Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
+  GridItem,
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 import { Hero } from '../components/Hero'
@@ -18,29 +14,10 @@ const Index = () => (
   <Container height="100vh">
     <Hero />
     <Main>
-      <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
-      </Text>
-
-      <List spacing={3} my={0}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
+      <GridItem rowSpan={2} colSpan={1} bg="tomato" />
+      <GridItem colSpan={2} bg="papayawhip" />
+      <GridItem colSpan={2} bg="papayawhip" />
+      <GridItem colSpan={4} bg="tomato" />
     </Main>
 
     <DarkModeSwitch />

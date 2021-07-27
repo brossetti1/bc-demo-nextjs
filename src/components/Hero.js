@@ -1,9 +1,9 @@
 import { Flex, Heading } from '@chakra-ui/react'
 
 export const Hero = ({ title }) => (
-  <Flex justifyContent="center" alignItems="center" height="100vh">
+  <Flex justifyContent="center" alignItems="center" pt={5}>
     <Heading
-      fontSize="10vw"
+      fontSize="2vw"
       bgGradient="linear(to-l, #7928CA, #FF0080)"
       bgClip="text"
     >
@@ -13,5 +13,5 @@ export const Hero = ({ title }) => (
 )
 
 Hero.defaultProps = {
-  title: 'with-chakra-ui',
+  title: 'Chaining Blocks with POW',
 }
